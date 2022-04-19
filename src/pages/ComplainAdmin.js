@@ -199,7 +199,7 @@ export default function ComplainAdmin() {
 
 
     useEffect(() => {
-            socket = io('http://localhost:5005/', {
+            socket = io('https://dmbt.herokuapp.com/'||'http://localhost:5005/', {
                 auth: {
                     token: localStorage.getItem('token'),
                 },
