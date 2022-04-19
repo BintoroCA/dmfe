@@ -204,7 +204,7 @@ export default function Complain() {
     const [state] = useContext(UserContext);
 
     useEffect(() => {
-        socket = io(process.env.reactserver||'http://localhost:5005/', {
+        socket = io('https://dmbt.herokuapp.com/'||'http://localhost:5005/', {
             auth: {
                 token: localStorage.getItem('token'),
               },
