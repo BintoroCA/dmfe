@@ -49,7 +49,7 @@ export default function Register() {
       console.log(response);
 
       // Notification
-      if (response.data.data.status == "success") {
+      if (response.data.status == "success") {
         const alert = (
           <Alert variant="success" className="py-1">
             Success, now you can login
