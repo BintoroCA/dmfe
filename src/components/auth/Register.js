@@ -44,12 +44,12 @@ export default function Register() {
       const body = JSON.stringify(form);
 
       // Insert data user to database
-      const response = await API.post("/register",body, config);
+      const response = await API.post("/register", body, config);
 
       console.log(response);
 
       // Notification
-      if (response.status == "success") {
+      if (response.data.status == "success") {
         const alert = (
           <Alert variant="success" className="py-1">
             Success, now you can login
